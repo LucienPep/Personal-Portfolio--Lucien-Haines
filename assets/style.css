@@ -108,13 +108,16 @@ section {
 }
 
 article {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
     background-color: white;
     margin: 0 4px 0 4px;
     padding: 20px;
+    min-height: 0;
 }
 
 article h2{
-    
     font-size: 30pt;
     font-weight: lighter;
     font-family: 'Gatz', Verdana, Tahoma, sans-serif;
@@ -122,31 +125,56 @@ article h2{
     padding-right: 100%;
 }
 
-.main-tab{
-    flex: 1 1 50%;
-    height: fit-content;
-}
-
-.work-tabs{
-   flex: 1 1 25%;
-   flex-wrap: wrap;
-   padding: 10px;
-   display: flex;
-   flex-wrap: wrap;
-}
-
-.work-tabs.one{
-    flex: 1 1 50%;
-}
-
-.work-tabs.two{
-    height: fit-content;
-}
-
-.work-tabs img{
+.box1 img{
     width: 100%;
-    height: fit-content;
-    border-style: solid;
-    border-width: 4px;
+
 }
 
+.box1{
+    height: fit-content;
+    flex: 1 1 100%;
+    border: 4px;
+    border-style: solid;
+    margin: 2px;
+}
+
+.container{
+    display: inline-flex;
+    width: fit-content;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+    bottom: 100px;
+    left: 15px;
+    justify-content: left;
+    flex-shrink: 0;
+}
+
+.container h3{
+    position: relative;
+    width: fit-content;
+    font-size: 30pt;
+    font-weight: lighter;
+    font-family: 'Gatz', Verdana, Tahoma, sans-serif;
+    letter-spacing: 1px;    
+}
+
+.container p{
+    position: relative;
+    width: fit-content;
+    font-size: 15px;
+    font-family: 'body',Verdana, Tahoma, sans-serif; ;
+}
+
+.box img{
+    width: 100%;
+}
+
+.box{
+    height: fit-content;
+    flex: 1 1 50px;
+    border: 4px;
+    border-style: solid;
+    margin: 2px;
+}
