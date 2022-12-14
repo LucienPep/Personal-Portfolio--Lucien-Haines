@@ -5,7 +5,7 @@
 }
 
 html {
-    margin: 0 100px 0 100px;
+    margin: 0 200px 0 200px;
 }
 
 :root {
@@ -20,6 +20,18 @@ html {
 @font-face {
     font-family: "body";
     src: url(Fonts/intrepid.ttf);
+}
+
+@media only screen and (max-width: 1200px){
+    html{
+        margin: 0 100px 0 100px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    html{
+        margin: 0 50px 0 50px;
+    }
 }
 
 .centre{
@@ -117,7 +129,9 @@ article {
     background-color: white;
     margin: 0 4px 0 4px;
     padding: 20px;
+    padding-bottom: 75px;
     min-height: 0;
+    border-radius: 0 0 20px 20px;
 }
 
 article h2{
@@ -185,7 +199,6 @@ article h2{
 
 footer{
     padding: 10px 0 30px 0;
-    margin-bottom: 100px;
 }
 
 footer h2{
@@ -198,7 +211,12 @@ footer h2{
 }
 
 footer a{
-    padding: 25px 25px 130px 25px;
+    padding: 25px 25px 0px 25px;
     text-decoration: none;
     color: var(--gold);
+}
+
+.base{
+    background-color: white;
+    padding: 50px;
 }
