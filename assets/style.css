@@ -4,13 +4,20 @@
     margin: 0;
 }
 
+/* Initial presets for webpage */
+
 html {
     margin: 0 200px 0 200px;
 }
 
 :root {
     --gold: #ffe7bb;
+    --gold2: #ceb397;
+    --gold3: #996a37;
+    --black: #000000;
+    --white: #ffffff;
 }
+
 
 @font-face {
     font-family: "Gatz";
@@ -40,14 +47,16 @@ html {
     margin-right: auto;
 }
 
+/* Header and Links */
+
 header {
     font-size: 20pt;
     font-weight: lighter;
     letter-spacing: 1px;
     padding: 10px;
     font-family: 'Gatz', Verdana, Tahoma, sans-serif ;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--black);
+    color: var(--white);
     text-align: center;
     border-radius: 20px 20px 0px 0px;
 }
@@ -78,23 +87,27 @@ a:link{
     color: var(--gold);
 }
 a:hover{
-    color: #ceb397;
+    color: var(--gold2)
 }
 a:active{
-    color: #996a37;
+    color: var(--gold3)
 }
 
 main{
-    background-color: #000000;
+    background-color: var(--black);
 }
+
+/* Main banner */
 
 .glass{
     position: relative;
-    color: white;
+    color: var(--white);
     padding-bottom: 10px;
-    background-color: #000000;
+    background-color: var(--black);
     border-radius: 0 0 -20px -20px;
 }
+
+/* About me*/
 
 section h2{
     font-size: 30pt;
@@ -110,7 +123,7 @@ section {
     line-height: 25px;
     text-align: justify;
     text-justify: inter-word;
-    background-color: #ffffff;
+    background-color: var(--white);
     color: rgb(0, 0, 0);
     padding: 20px 20px 30px 20px;
     border-radius: 20px 20px 0 0;
@@ -122,11 +135,13 @@ section a{
     color: #996a37;
 }
 
+/* Work */
+
 article {
     width: fit-content;
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: var(--white);
     margin: 0 4px 0 4px;
     padding: 20px;
     padding-bottom: 75px;
@@ -159,20 +174,21 @@ article h2{
 .container{
     display: inline-flex;
     width: fit-content;
+    max-width: 90%;
     flex-direction: column;
     padding: 10px;
-    background-color: white;
+    background-color: var(--white);
     position: relative;
-    bottom: 100px;
-    left: 15px;
-    justify-content: left;
-    flex-shrink: 0;
+    bottom: 7vw;
+    left: 1vw;
+    justify-content: space-evenly;
+    flex-shrink: 2;
 }
 
 .container h3{
     position: relative;
     width: fit-content;
-    font-size: 30pt;
+    font-size: 2vw;
     font-weight: lighter;
     font-family: 'Gatz', Verdana, Tahoma, sans-serif;
     letter-spacing: 1px;    
@@ -181,7 +197,7 @@ article h2{
 .container p{
     position: relative;
     width: fit-content;
-    font-size: 15px;
+    font-size: 1vw;
     font-family: 'body',Verdana, Tahoma, sans-serif; ;
 }
 
@@ -190,19 +206,39 @@ article h2{
 }
 
 .box{
-    height: fit-content;
-    flex: 1 1 50px;
+    height: 100%;
+    flex: 1 1 200px;
     border: 4px;
     border-style: solid;
     margin: 2px;
 }
+
+@media only screen and (max-width: 1200px){
+    .container h3{
+        font-size: 3vw;
+    }
+    .container p{
+        font-size: 1.5vw ;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .container h3{
+        font-size: 4vw;
+    }
+    .container p{
+        font-size: 2vw ;
+    }
+}
+
+/* Footer */
 
 footer{
     padding: 10px 0 30px 0;
 }
 
 footer h2{
-    color: white;
+    color: var(--white);
     font-size: 30pt;
     font-weight: lighter;
     font-family: 'Gatz', Verdana, Tahoma, sans-serif;
@@ -217,6 +253,6 @@ footer a{
 }
 
 .base{
-    background-color: white;
+    background-color: var(--white);
     padding: 50px;
 }
