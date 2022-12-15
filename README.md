@@ -29,7 +29,7 @@ Created base HTML and CSS file. I planned how the webpage would look and how I w
 
 Added all data required including titles, paragraphs and images to HTML file, all correctly labeled. Structured webpage using css elements to make the website easy to understand and visually appealing. Used flex-box property to make work category adjust with webpage when size of res is changed. Finally added links for webpage and external sources to complete functionality of webpage.
 
->## [**Link to live GitPage**]()
+>## [**Link to live GitPage**](https://lucienpep.github.io/Personal-Portfolio--Lucien-Haines/)
 
 ![Personal Portfolio](./assets/photos/Portfolio%20Screenshot.png)
 
