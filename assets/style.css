@@ -169,6 +169,7 @@ article h2{
     border-style: solid;
     margin: 2px;
     text-decoration: none;
+    position: relative;
 }
 
 .container{
@@ -178,9 +179,9 @@ article h2{
     flex-direction: column;
     padding: 10px;
     background-color: var(--white);
-    position: relative;
-    bottom: 7vw;
-    left: 1vw;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
     justify-content: space-evenly;
     flex-shrink: 2;
 }
@@ -211,6 +212,7 @@ article h2{
     border: 4px;
     border-style: solid;
     margin: 2px;
+    position: relative;
 }
 
 @media only screen and (max-width: 1200px){
@@ -255,4 +257,9 @@ footer a{
 .base{
     background-color: var(--white);
     padding: 50px;
+}
+
+.box1 a{
+    height: 100px;
+    width: 100px;
 }
