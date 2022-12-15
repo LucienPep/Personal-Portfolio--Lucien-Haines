@@ -31,7 +31,7 @@ Added all data required including titles, paragraphs and images to HTML file, al
 
 >## [**Link to live GitPage**]()
 
-![Personal Portfolio]()
+![Personal Portfolio](./assets/photos/Portfolio%20Screenshot.png)
 
 ---
 Lucien Haines UADL 2022
